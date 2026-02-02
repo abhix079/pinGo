@@ -1,0 +1,131 @@
+
+.navContainer{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    gap: 100px;
+    border-bottom: 1px solid grey;
+    margin: 5px 30px;
+    padding-bottom: 8px;
+
+}
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3px; 
+  padding: 5px 10px;  
+  cursor: pointer;             
+
+            
+}
+
+.dot {
+  margin-top: 18px;
+  width: 8px;                
+  height: 8px;
+  background-color: #00FF00;  
+  border-radius: 50%;         
+  box-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00; 
+  animation: blink 1s infinite; 
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    background-color: #00FF00;
+    box-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;
+  }
+  25%, 75% {
+    background-color: #00AA00; 
+    box-shadow: 0 0 2px #00AA00, 0 0 5px #00AA00, 0 0 10px #00AA00;
+  }
+}
+
+.logoName {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.logoName span{
+  color: #00FF00;
+}
+
+.navItems{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+    cursor: pointer;
+
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.user img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+
+}
+.user button{
+  font-size: 15px;
+    background-color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 10px;
+    margin-left: 20px;
+
+}
+
+.navItems p:hover{
+    
+color: #00FF00;
+}
+
+.mainContainer {
+  display: flex;
+  height: 85vh; 
+ margin: 20px 70px;
+  width: auto;
+  gap: 30px;
+  color: white;
+}
+
+.leftContainer {
+  width: 80%;
+ /* border: 1px solid grey; */
+  padding: 12px 20px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.rightContainer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 20px;
+  
+}
+
+.rightTop,
+.rightBottom {
+  flex: 1; /* take equal space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 10px;
+  
+}

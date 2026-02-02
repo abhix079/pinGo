@@ -1,0 +1,129 @@
+
+.topBar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 5px 0px;
+
+}
+.topBar p{
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.topBar span{
+    color:#00FF00 ;
+    font-size: 25px;
+}
+
+.topBar button{
+    background-color: white;
+    font-size: 15px;
+    padding: 4px 13px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.urlCard{
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.blinkerUrl{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content:center;
+}
+
+
+
+.actionBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+    text-align: center;
+    justify-self: center;
+}
+
+.dot {
+ margin: 8px;
+  width: 8px;                
+  height: 8px;
+  background-color: #00FF00;  
+  border-radius: 50%;         
+  box-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00; 
+  animation: blink 1s infinite; 
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    background-color: #00FF00;
+    box-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 15px #00FF00;
+  }
+  25%, 75% {
+    background-color: #00AA00; 
+    box-shadow: 0 0 2px #00AA00, 0 0 5px #00AA00, 0 0 10px #00AA00;
+  }
+}
+
+
+
+.status{
+    font-size: 12px;
+    background-color: rgb(252, 151, 151);
+    color: red;
+    padding: 1px 15px 3px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+.dialogOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialogBox {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  text-align: center;
+}
+
+.dialogBox input {
+  width: 100%;
+  padding: 8px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.dialogActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

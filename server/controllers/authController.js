@@ -28,14 +28,14 @@ export const callback = async (req, res) => {
 
     const { access_token } = response.data;
 
-    // Get user info
+    // Get user info 
     const googleUser = await axios.get("https://www.googleapis.com/oauth2/v3/userinfo", {
       headers: { Authorization: `Bearer ${access_token}` },
     });
-
+    
     const { name, email, picture } = googleUser.data;
 
-    // Redirect to frontend with user info
+    // Redirect to frontend with user info after login
     res.redirect(
       `http://localhost:5173/homepage?name=${encodeURIComponent(name)}&email=${encodeURIComponent(
         email
@@ -47,7 +47,7 @@ export const callback = async (req, res) => {
   }
 };
 
-// Step 3: Logout
+// Step 3: Logout code 
 export const logout = (req, res) => {
   res.clearCookie("token"); // clear cookie if using JWT
   res.redirect("http://localhost:5173/"); // back to landing page
